@@ -58,3 +58,7 @@ these are only available on the client side
 
 all the components in the next.js are server components
 if the page file is not present in the directory then the directory is not accessible as the server components
+
+## Data Fetching
+
+we fetch the data in the server side and that will help us render the code in the server side that helps user interface clean and great
