@@ -9,11 +9,12 @@ interface User{
 
 
 const user = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users')
+  const res = await fetch('https://jsonplaceholder.typicode.com/users', {cache:'no-store'})
   const users:User[] = await res.json();
 
   return (
     <div>
+      <p>{new Date().toLocaleTimeString()}</p>
       user syam hello
       {/* <Products/> */}
       <h1>users :</h1>

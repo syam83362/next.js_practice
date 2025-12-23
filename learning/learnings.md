@@ -62,3 +62,31 @@ if the page file is not present in the directory then the directory is not acces
 ## Data Fetching
 
 we fetch the data in the server side and that will help us render the code in the server side that helps user interface clean and great
+
+
+## caching the data
+
+the caching will helps us save preloaded content into the cache and show the user that chace data, this will helps us in performance
+the default caching is available in fetch funtion
+# fetch caching
+
+fetch(url, chace:'no-store') or fetch(url, next:{revalidate:10})
+
+the first will not store the cache and second one will reloads for every 10 seconds
+
+# static rendering static site generation
+
+the static rendering will renders at build time and servers the same page on every request
+
+# dynamic rendering 
+
+render at request time
+
+
+this is all dependent at the fetch 
+if we use fetch and do not explicitly mention the caching it will become the static page and if mention the chace it will become the dynamic rendering page.
+
+# commands to build and run for production
+
+npm run build - for building the application
+npm start - for starting the production application
